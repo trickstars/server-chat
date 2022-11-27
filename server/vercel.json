@@ -1,5 +1,6 @@
 {
     "version":  2,
+    "name": "deployserverchat",
     "builds": [
         {
             "src": "./index.js",
@@ -8,8 +9,8 @@
     ],
     "routes": [
         {
-            "src": "/.*",
-            "dest": "index.js"
+            "src": "/(.*)",
+            "dest": "/index.js"
         }
     ]
 }
